@@ -1,6 +1,6 @@
 import React from 'react';
 import './../App.css';
-import cvFile from '../assets/cv.pdf'; // Un file CV in formato PDF
+import cvFile from './../assets/CV.pdf';
 
 const CV: React.FC = () => {
     return (
