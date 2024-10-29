@@ -1,6 +1,7 @@
 import React from 'react';
 import './../App.css';
 import cvFile from './../assets/CV.pdf';
+import coverLetter from './../assets/Cover_Letter.pdf';
 
 const CV: React.FC = () => {
     return (
@@ -23,6 +24,15 @@ const CV: React.FC = () => {
             className="cv-download-btn py-2 px-4 rounded shadow font-bold"
           >
             Download CV
+          </a>
+        </div>
+        <div className='flex justify-center'>
+        <a
+            href={coverLetter}
+            download
+            className="cv-download-btn py-2 px-4 rounded shadow font-bold"
+          >
+            Download Cover Letter
           </a>
         </div>
       </section>

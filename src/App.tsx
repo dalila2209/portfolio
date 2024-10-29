@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect} from 'react';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
@@ -9,6 +9,8 @@ import Contact from './components/Contact';
 import Button from './components/Button';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import ProjectDetails from './components/ProjectDetail';
+import Modal from './components/Modal';
+
 
 
 const ScrollToSection = () => {
@@ -26,9 +28,11 @@ const ScrollToSection = () => {
 };
 
 const Homepage: React.FC = () => {
+  
   return (
     <>
       <AboutMe />
+      <Modal />
       <Portfolio />
       <CV />
       <Contact />
