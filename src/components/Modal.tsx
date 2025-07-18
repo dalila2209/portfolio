@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import musaBasic from './../assets/musa_basic.pdf';
 import musaMiddle from './../assets/musa_middle.pdf';
+import musaAdvanced from './../assets/musa_advanced.pdf';
 
 const Modal: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +31,7 @@ const Modal: React.FC = () => {
                         <span className="close" onClick={closeModal}>&times;</span>
                         <iframe src={musaBasic} />
                         <iframe src={musaMiddle} />
+                        <iframe src={musaAdvanced} />
                     </div>
                 </div>
             )}
