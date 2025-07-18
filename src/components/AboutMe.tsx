@@ -40,6 +40,7 @@ const softSkills = [
 ];
 
 const minorHardSkills = [
+    { name: "PHP", icon: phpIcon},
     { name: "HTML", icon: htmlIcon},
     { name: "CSS", icon: cssIcon},
     { name: "JavaScript", icon: jsIcon},
