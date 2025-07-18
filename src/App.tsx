@@ -1,7 +1,8 @@
 import React, { useEffect} from 'react';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
-import Portfolio from './components/Portfolio';
+import StudyPortfolio from './components/StudyPortfolio';
+import WorkPortfolio from './components/WorkPortfolio';
 import CV from './components/CV';
 import Footer from './components/Footer';
 import './App.css';
@@ -9,6 +10,7 @@ import Contact from './components/Contact';
 import Button from './components/Button';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import ProjectDetails from './components/ProjectDetail';
+import WorkDetails from './components/WorkDetails';
 import Modal from './components/Modal';
 
 
@@ -33,7 +35,8 @@ const Homepage: React.FC = () => {
     <>
       <AboutMe />
       <Modal />
-      <Portfolio />
+      <WorkPortfolio />
+      <StudyPortfolio />
       <CV />
       <Contact />
       <Button />
@@ -53,7 +56,8 @@ const App: React.FC = () => {
           {/* La rotta principale renderizza la homepage con tutte le sezioni */}
           <Route path='/' element={<Homepage />} />
           {/* Rotta per i dettagli di un progetto */}
-          <Route path='/project/:id' element={<ProjectDetails />} />
+          <Route path="/project/study/:id" element={<ProjectDetails />} />
+          <Route path="/project/work/:id" element={<WorkDetails />} />
         </Routes>
       </div>
     </Router>

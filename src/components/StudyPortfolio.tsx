@@ -34,7 +34,7 @@ const projects = [
     
 ];
 
-const Portfolio: React.FC = () => {
+const StudyPortfolio: React.FC = () => {
     return (
         <section id="portfolio" className="relative py-10 overflow-hidden">
             {/* Parentesi graffe decorative */}
@@ -44,7 +44,7 @@ const Portfolio: React.FC = () => {
             <div className="graffe absolute right-0 top-0 h-full w-12 text-7xl">
                 <span className="block">{"}"}</span>
             </div>
-            <h2 className="titoli text-center text-3xl font-bold mb-8">My projects</h2>
+            <h2 className="titoli text-center text-3xl font-bold mb-8">My study projects</h2>
             <div className="container mx-auto">
                 <div className="flex justify-center space-x-4">
                     {projects.map((project, index) => (
@@ -59,7 +59,7 @@ const Portfolio: React.FC = () => {
                                 </video>
                             <h3 className="project-title text-xl font-semibold mt-2 font-bold">{project.title}</h3>
                             <Link 
-                                to={`/project/${project.id}`}  // Linka alla pagina di dettaglio
+                                to={`/project/study/${project.id}`}  // Linka alla pagina di dettaglio
                                 className="project-content text-gray-700 mb-4 font-bold"
                             >
                                 {project.description}
@@ -72,4 +72,4 @@ const Portfolio: React.FC = () => {
     );
 };
 
-export default Portfolio;
+export default StudyPortfolio;

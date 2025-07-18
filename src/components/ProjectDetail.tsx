@@ -66,6 +66,7 @@ const ProjectDetails: React.FC = () => {
                         loop
                         muted
                         className="video"
+
                     >
                         <source src={project.video} type="video/mp4" />
                         Your browser does not support the video tag.

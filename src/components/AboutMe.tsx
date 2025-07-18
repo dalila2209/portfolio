@@ -19,6 +19,13 @@ import problemIcon from '../assets/idea.png';
 import resilienceIcon from '../assets/resilience.png';
 import timeIcon from '../assets/time.png';
 import flexibilityIcon from '../assets/flexibility.png';
+import javaIcon from '../assets/java.png';
+import springIcon from '../assets/spring.png';
+import mongoIcon from '../assets/mongo.png';
+import dockerIcon from '../assets/docker.png';
+import gitIcon from '../assets/git.png';
+import jiraIcon from '../assets/jira.png';
+import confluenceIcon from '../assets/confluence.png';
 
 const softSkills = [
     { name: "Communication", icon: communicationIcon },
@@ -32,9 +39,7 @@ const softSkills = [
     { name: "Flexibility", icon: flexibilityIcon },
 ];
 
-const hardSkills = [
-    { name: "PHP", icon: phpIcon},
-    { name: "Sql", icon: sqlIcon},
+const minorHardSkills = [
     { name: "HTML", icon: htmlIcon},
     { name: "CSS", icon: cssIcon},
     { name: "JavaScript", icon: jsIcon},
@@ -42,6 +47,17 @@ const hardSkills = [
     { name: "React", icon: reactIcon},
     { name: "Angular", icon: angularIcon},
     { name: "Flutter", icon: flutterIcon},
+];
+
+const majorHardSkills = [
+    { name: "Java", icon: javaIcon},
+    { name: "Spring", icon: springIcon},
+    { name: "MySql", icon: sqlIcon},
+    { name: "MongoDB", icon: mongoIcon},
+    { name: "Docker", icon: dockerIcon},
+    { name: "GitHub", icon: gitIcon},
+    { name: "Jira", icon: jiraIcon},
+    { name: "Confluence", icon: confluenceIcon}
 ];
 
 
@@ -59,18 +75,32 @@ const AboutMe: React.FC = () => {
             <div className="about-container">
                 <img src={profilePic} alt="Profile" className="profile-pic rounded-full h-40 w-40 mb-8 shadow-lg"/>
                 <ul>
-                    <li className="about-list">👩🏻‍💻 Both through my studies and through various work experiences I have increasingly developed a propensity for IT, specifically for the development of web applications. I am a person with a strong sense of responsibility, determination and collaboration. I like both working in groups and sharing objectives and working independently.</li>
+                    <li className="about-list">👩🏻‍💻 Passionate Java developer with experience in backend development using Spring Boot, microservices, and cloud technologies.
+Skilled in building APIs, managing databases, and delivering scalable web solutions.
+Motivated to grow in dynamic environments and contribute to impactful digital projects.</li>
                     <li className="about-list">🎓 Graduation in Corporate Information Systems with a score of 100/100</li>
                     <li className="about-list">🎓 Master Full-Stack Web Developer</li>
-                    <li className="about-list">🎓Advanced course on Front-End Developer</li>
+                    <li className="about-list">🎓Advanced course on Full-Stack Developer</li>
                 </ul>
                 
             </div>
             <div className='skills-container w-full mt-10'>
                 <div className='hard-skills-container m-8'>
-                        <h5 className="titoli text-center text-2xl font-semibold mb-8">Hard Skills</h5>       
+                        <h5 className="titoli text-center text-2xl font-semibold mb-8">Major Hard Skills</h5>       
                         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-                            {hardSkills.map((skill, index) => (
+                            {majorHardSkills.map((skill, index) => (
+                                <div key={index} className="flex items-center p-4 border rounded-lg shadow-md sfondo-card">
+                                    <img src={skill.icon} alt={skill.name} className="h-8 w-8 mr-4" />
+                                    <span className="content text-lg font-medium">{skill.name}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className='skills-container w-full mt-10'>
+                <div className='hard-skills-container m-8'>
+                        <h5 className="titoli text-center text-2xl font-semibold mb-8">Minor Hard Skills</h5>       
+                        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+                            {minorHardSkills.map((skill, index) => (
                                 <div key={index} className="flex items-center p-4 border rounded-lg shadow-md sfondo-card">
                                     <img src={skill.icon} alt={skill.name} className="h-8 w-8 mr-4" />
                                     <span className="content text-lg font-medium">{skill.name}</span>
@@ -87,6 +117,7 @@ const AboutMe: React.FC = () => {
                                 <span className="content text-lg font-medium">{skill.name}</span>
                             </div>
                         ))}
+                    </div>
                     </div>
                 </div>
             </div>
