@@ -15,7 +15,7 @@ const CV: React.FC = () => {
             </div>
         <h2 className="titoli text-center text-3xl font-bold mb-8">CV</h2>
         <p className="text-center text-gray-700 mb-4 font-bold">
-        You can download my CV by clicking on the button below:
+        Download my updated professional documents:
         </p>
         <div className="flex justify-center">
           <a

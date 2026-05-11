@@ -8,9 +8,7 @@ const Header: React.FC = () => {
   const navigate = useNavigate();
 
   const handleNavClick = (hash: string) => {
-    // Naviga prima alla homepage, poi imposta l'hash per scrollare alla sezione corretta
     navigate('/');
-    // Usa un timeout breve per assicurarti che la navigazione alla homepage avvenga prima di scrollare
     setTimeout(() => {
       window.location.hash = hash;
     }, 0);
@@ -35,15 +33,23 @@ const Header: React.FC = () => {
                   className='nav-btn text-l font-bold'
                   onClick={() => handleNavClick('#about')}
                 >
-                  About me
+                  Profile
                 </button>
               </li>
               <li>
                 <button
                   className='nav-btn text-l font-bold'
-                  onClick={() => handleNavClick('#portfolio')}
+                  onClick={() => handleNavClick('#work')}
                 >
-                  Projects
+                  Work
+                </button>
+              </li>
+              <li>
+                <button
+                  className='nav-btn text-l font-bold'
+                  onClick={() => handleNavClick('#certifications')}
+                >
+                  Certifications
                 </button>
               </li>
               <li>

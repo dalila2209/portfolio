@@ -9,21 +9,20 @@ const projects = [
     {
         id: 1,
         title: "Public Sector Bonus Platform",
-        description: "Go to project's description",
+        description: "View case study",
         image: imgPa,
     },
     {
         id: 2,
         title: "Administrative and Accounting Management",
-        description: "Go to project's description",
+        description: "View case study",
         image: imgGest,
     }
 ];
 
 const WorkPortfolio: React.FC = () => {
     return (
-        <section id="portfolio" className="relative py-10 overflow-hidden">
-            {/* Parentesi graffe decorative */}
+        <section id="work" className="relative py-10 overflow-hidden">
             <div className="graffe absolute left-0 top-0 h-full w-12 text-7xl">
                 <span className="block">{"{"}</span>
             </div>
@@ -31,7 +30,10 @@ const WorkPortfolio: React.FC = () => {
                 <span className="block">{"}"}</span>
             </div>
 
-            <h2 className="titoli text-center text-3xl font-bold mb-8">My work projects</h2>
+            <h2 className="titoli text-center text-3xl font-bold mb-3">Selected professional work</h2>
+            <p className="text-center max-w-3xl mx-auto mb-8 font-semibold">
+                Enterprise and public-sector platforms built around backend services, integrations, data persistence and maintainable delivery workflows.
+            </p>
 
             <div className="container mx-auto">
                 <div className="flex flex-wrap justify-center gap-6">
