@@ -30,7 +30,7 @@ const ScrollToSection = () => {
 const Homepage: React.FC = () => {
   
   return (
-    <>
+    <main id="main-content">
       <AboutMe />
       <WorkPortfolio />
       <Modal />
@@ -38,7 +38,7 @@ const Homepage: React.FC = () => {
       <Contact />
       <Button />
       <Footer />
-    </>
+    </main>
   );
 };
 
