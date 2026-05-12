@@ -470,6 +470,10 @@ iframe {
   .graffe {
     display: none;
   }
+
+  #about {
+    padding-top: 32px;
+  }
 }
 
 @media (max-width: 640px) {
