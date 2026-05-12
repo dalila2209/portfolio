@@ -2,26 +2,31 @@ import React from 'react';
 import musaBasic from './../assets/musa_basic.pdf';
 import musaMiddle from './../assets/musa_middle.pdf';
 import musaAdvanced from './../assets/musa_advanced.pdf';
+import psm1 from '../assets/PSM1.pdf';
 
 const certificates = [
     {
-        title: "Scrum Master Certification",
-        description: "Agile facilitation, Scrum framework, team collaboration and continuous improvement.",
-    },
-    {
-        title: "PSPO I - In progress",
+        title: "PSPO I - In progress - Product Owner Certification (Scrum.org)",
         description: "Product ownership, product value, backlog management and stakeholder-oriented delivery.",
     },
     {
-        title: "MUSA Basic",
+        title: "PSM I - Scrum Master Certification (Scrum.org)",
+        description: "Agile facilitation, Scrum framework, team collaboration and continuous improvement.",
+        file: psm1,
+    },
+    {
+        title: "Master Full-Stack Developer - Basic",
+        description: "Foundations of web development, frontend structure, backend basics and first full-stack project workflows.",
         file: musaBasic,
     },
     {
-        title: "MUSA Middle",
+        title: "Master Full-Stack Developer - Middle",
+        description: "Intermediate full-stack development with stronger focus on application architecture, data management and integration between frontend and backend.",
         file: musaMiddle,
     },
     {
-        title: "MUSA Advanced",
+        title: "Master Full-Stack Developer - Advanced",
+        description: "Advanced project work focused on more complete web applications, structured development practices and professional delivery mindset.",
         file: musaAdvanced,
     },
 ];

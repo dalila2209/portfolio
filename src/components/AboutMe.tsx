@@ -1,6 +1,6 @@
 import React from 'react';
 import './../App.css';
-import profilePic from '../assets/profile-pic.jpg';
+import profilePic from '../assets/profile_pic.jpg';
 import sqlIcon from '../assets/sql.webp';
 import communicationIcon from '../assets/communication.png';
 import teamworkIcon from '../assets/teamwork.png';
