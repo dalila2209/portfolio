@@ -16,7 +16,7 @@ const Header: React.FC = () => {
 
     return (
       <header id='header1' className="h-20 shadow-lg rounded-b-lg">
-        <div className="container mx-auto flex items-center justify-between h-full">
+        <div className="container mx-auto flex items-center justify-between h-full px-4">
           <div className="flex items-center">
             <img
               src={img}
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
             />
           </div>
           <nav>
-          <ul className="flex space-x-6">
+          <ul className="flex flex-wrap justify-center gap-2 md:gap-6">
               {/* Usa handleNavClick per navigare alla homepage e scrollare alla sezione */}
               <li>
                 <button

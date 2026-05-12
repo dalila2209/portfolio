@@ -15,9 +15,9 @@ const certificates = [
         file: psm1,
     },
     {
-        title: "Master Full-Stack Developer - Basic",
-        description: "Foundations of web development, frontend structure, backend basics and first full-stack project workflows.",
-        file: musaBasic,
+        title: "Master Full-Stack Developer - Advanced",
+        description: "Advanced project work focused on more complete web applications, structured development practices and professional delivery mindset.",
+        file: musaAdvanced,
     },
     {
         title: "Master Full-Stack Developer - Middle",
@@ -25,9 +25,9 @@ const certificates = [
         file: musaMiddle,
     },
     {
-        title: "Master Full-Stack Developer - Advanced",
-        description: "Advanced project work focused on more complete web applications, structured development practices and professional delivery mindset.",
-        file: musaAdvanced,
+        title: "Master Full-Stack Developer - Basic",
+        description: "Foundations of web development, frontend structure, backend basics and first full-stack project workflows.",
+        file: musaBasic,
     },
 ];
 
