@@ -32,8 +32,8 @@ const Homepage: React.FC = () => {
   return (
     <>
       <AboutMe />
-      <Modal />
       <WorkPortfolio />
+      <Modal />
       <CV />
       <Contact />
       <Button />

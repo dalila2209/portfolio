@@ -8,13 +8,21 @@ import imgGest from './../assets/gestionale.png';
 const projects = [
     {
         id: 1,
-        title: "Public Sector Bonus Platform",
+        title: "Public-Sector Digital Platform",
+        role: "Backend Developer",
+        period: "June 2025 - Present",
+        summary: "Backend services and integrations for a scalable multi-portal platform, with focus on data flows, service interoperability and delivery support.",
+        technologies: ["Java", "Spring Boot", "Kafka", "MongoDB", "Azure", "ARGO"],
         description: "View case study",
         image: imgPa,
     },
     {
         id: 2,
         title: "Administrative and Accounting Management",
+        role: "Backend Developer",
+        period: "November 2024 - June 2025",
+        summary: "Management platform supporting administrative workflows, document generation and HR-related business processes in a microservices context.",
+        technologies: ["Java", "Spring Boot", "Kafka", "MySQL", "Microservices"],
         description: "View case study",
         image: imgGest,
     }
@@ -30,9 +38,9 @@ const WorkPortfolio: React.FC = () => {
                 <span className="block">{"}"}</span>
             </div>
 
-            <h2 className="titoli text-center text-3xl font-bold mb-3">Selected professional work</h2>
+            <h2 className="titoli text-center text-3xl font-bold mb-3">Professional Experience</h2>
             <p className="text-center max-w-3xl mx-auto mb-8 font-semibold">
-                Enterprise and public-sector platforms built around backend services, integrations, data persistence and maintainable delivery workflows.
+                A selection of professional projects where I contributed to backend development, service integration and delivery support, with increasing focus on analysis, prioritization and product-oriented collaboration.
             </p>
 
             <div className="container mx-auto">
@@ -47,6 +55,18 @@ const WorkPortfolio: React.FC = () => {
                             <h3 className="project-title text-xl font-semibold mt-2 font-bold text-center">
                                 {project.title}
                             </h3>
+                            <p className="project-content text-center font-bold mt-1">
+                                {project.role}
+                            </p>
+                            <p className="text-sm text-center font-bold mt-1">
+                                {project.period}
+                            </p>
+                            <p className="text-sm text-center mt-2">
+                                {project.summary}
+                            </p>
+                            <p className="project-content text-sm text-center font-bold mt-3">
+                                {project.technologies.join(" · ")}
+                            </p>
                             <div className="text-center mt-2">
                                 <Link
                                     to={`/project/work/${project.id}`}
