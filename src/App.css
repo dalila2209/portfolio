@@ -217,6 +217,23 @@ p {
   background-color: #a40e4c;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  padding: 0 10px 12px;
+}
+
+.footer-links a {
+  color: #f49d6e;
+  font-weight: 700;
+}
+
+.footer-links a:hover {
+  color: #2c2c54;
+}
+
 .content {
   color: #a40e4c;
 }
