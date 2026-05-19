@@ -7,16 +7,16 @@ const Footer: React.FC = () => {
             <p>© All rights reserved ~ created using React</p>
             <div className="footer-links">
                 <a
-                    href="https://www.iubenda.com/privacy-policy/44862765"
+                    href="https://www.iubenda.com/privacy-policy/30661415"
                     className="iubenda-black iubenda-noiframe iubenda-embed"
-                    title="Privacy Policy"
+                    title="Privacy Policy "
                 >
                     Privacy Policy
                 </a>
                 <a
-                    href="https://www.iubenda.com/privacy-policy/44862765/cookie-policy"
+                    href="https://www.iubenda.com/privacy-policy/30661415/cookie-policy"
                     className="iubenda-black iubenda-noiframe iubenda-embed"
-                    title="Cookie Policy"
+                    title="Cookie Policy "
                 >
                     Cookie Policy
                 </a>
